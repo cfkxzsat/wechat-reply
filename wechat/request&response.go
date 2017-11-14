@@ -31,7 +31,7 @@ type TextResponseBody struct {
 func ProcRequest(w http.ResponseWriter, r *http.Request) {
 	r.ParseForm()
 	if !validateURL(w, r) {
-		log.Println("Wechat Service: this http request is not from Wechat platform!")
+		//log.Println("Wechat Service: this http request is not from Wechat platform!")
 		return
 	}
 	log.Println("Wechat Service: validateUrl Ok!")
